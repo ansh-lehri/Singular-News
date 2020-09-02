@@ -1,0 +1,28 @@
+{% extends 'feeds/base.html' %}
+{% block content %}
+<div class="mt-5 pt-3 container">
+    <!-- Scroller -->
+    {% include 'feeds/scroller.html' %}
+    <!-- ./Scroller -->
+    <div class="row justify-content-around">
+        <div class="mb-3 col-12">
+            <h4> {{ tag|title }} </h4>
+            <hr/>
+        </div>
+        {% for article in articles %}
+            <div class="mb-4 mb-lg-5 col-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src={{ article.urlToImage }} class="card-img-top rounded" alt="">
+                    <div class="px-0 card-body">
+                        <p class="text-uppercase card-category"> {{ article.source.name }} </p>
+                        <h5 class="card-title"> {{ article.title }}  </h5>
+                        <p class="card-text news-card-title"> {{ article.description }} </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        
+    </div>
+</div>
+
+{% endblock %}

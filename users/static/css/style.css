@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+body {
+  background-color: #1c66a5 !important;
+  height: calc(100% - 55px);
+}
+
+.main-wrapper {
+  min-width: 100%;
+}
+
+.form-box {
+  max-width: 40em;
+  min-height: 15em;
+}
+
+.reg-buttons {
+  padding: .5rem 1.5rem !important;
+}
+
+footer {
+  width: 100%;
+  font-size: smaller;
+}
+
+/* .custom-check {
+  background-image: url('https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+@media only screen and (min-width: 768px) {
+  .interest-wrapper {
+    max-width: 60%;
+  }
+}
